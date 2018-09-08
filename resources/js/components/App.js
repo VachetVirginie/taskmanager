@@ -2,6 +2,23 @@ import React, { Component } from 'react';
 
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+            name:'',
+            tasks: []
+        };
+    //bind
+    this.handleChange = this.handleChange.bind(this);
+
+    }
+    //handle change
+    handleChange(e){
+        // console.log(e.target.value);
+        this.setState({
+            name: e.target.value
+        });
+    }
     render() {
         return (
             <div className="container">
@@ -12,10 +29,17 @@ class App extends Component {
 
                             <div className="card-body">
                                 <form>
-                                    <div classname="form-group">
-                                        <textarea className="form-control" rows="5" placeholder="test" required/>
+                                    <div className="form-group">
+                                        <textarea 
+                                        onChange={this.handleChange}
+                                        value= {this.state.name}
+                                        className="form-control"
+                                        rows="5" 
+                                        placeholder="test" 
+                                        maxLength='255'
+                                        required/>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Create Task</button>
+                                    <button type="submit" className="btn btn-primary">Create Task</button>
 
                                 </form>
                             </div>
