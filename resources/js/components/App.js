@@ -49,6 +49,18 @@ renderTasks(){
         </div>
     ));
 }
+//get all tasks to backend
+getTasks(){
+    axios.get('./tasks').then(response => this.setState({
+        tasks : [...response.data.tasks]
+        })
+    );
+}
+
+// lifecycle method
+componentWillMount(){
+    this.getTasks();
+}
     render() {
         return (
             <div className="container">
