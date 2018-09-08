@@ -24,7 +24,8 @@ class App extends Component {
     handleSubmit(e) {
         e.preventDefault();
         axios
-            .post('/taskmanager/public/index.php/tasks', {
+        //bug adresse
+            .post('./tasks', {
                 name: this.state.name
             })
             .then(response => {

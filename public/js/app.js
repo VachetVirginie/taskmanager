@@ -56966,7 +56966,9 @@ var App = function (_Component) {
             var _this2 = this;
 
             e.preventDefault();
-            axios.post('/taskmanager/public/index.php/tasks', {
+            axios
+            //bug adresse
+            .post('./tasks', {
                 name: this.state.name
             }).then(function (response) {
                 // console.log('from handle submit', response);
