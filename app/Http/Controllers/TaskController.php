@@ -42,12 +42,7 @@ class TaskController extends Controller{
           return response()->json($task->with('user')->find($task->id));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show($id)
     {
         //
@@ -56,13 +51,19 @@ class TaskController extends Controller{
     
     public function edit($id)
     {
-        //
+        $task = Task::findOrFail($id);
+        return response()->json([
+            'task' => $task
+        ]);
     }
 
    
     public function update(Request $request, $id)
     {
-        //
+        $input = $request->all();
+        $task = Task::findOrFail($id);
+        $task->update($input);
+        return response()->json($task->with('user')->find($task->id));
     }
 
     public function destroy($id) {
