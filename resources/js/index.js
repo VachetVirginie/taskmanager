@@ -4,11 +4,7 @@ import App from './components/App';
 import { BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import TaskEdit from './components/TaskEdit';
 
-const About = () => (
-<div>
-    <h2>YEPPPPPPPPP</h2>
-</div>
-);
+
 
 if (document.getElementById('root')) {
     ReactDOM.render(

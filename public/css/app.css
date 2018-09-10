@@ -584,8 +584,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: auto;
+  padding-left: auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1253,7 +1253,7 @@ pre code {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    max-width: 50%;
+   
   }
 
   .col-md-7 {
@@ -3469,7 +3469,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #1d68a7;
+  color: white;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -4988,7 +4988,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color:#D77584;
 }
 
 .navbar-light .navbar-brand:hover,
@@ -4997,7 +4997,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: #D77584;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -5126,6 +5126,7 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 1.25rem;
+  background-color: #3B3E52;
 }
 
 .card-title {
@@ -10472,8 +10473,92 @@ a.text-dark:focus {
 }
 
 .navbar-laravel {
-  background-color: #fff;
+  background-color: #3B3E52;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+
+/* css perso */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300);
+body {
+  background: #3B3E52;
+  min-height: 100vh;
+  /* width: auto; */
+}
+.row{
+  margin:2%;
+}
+.title h1 {
+  font-size: 3.5em;
+  color: #63D5C3;
+}
+.bar {
+  height: 0.25em;
+  width: 75%;
+  background:#63D5C3;
+  margin: 1.5em auto 0;
+}
+
+input[type=text], input[type=password] {
+  font-size: 1.75em;
+  padding: 0.55em;
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+}
+input[type=text]::placeholder, input[type=password]::placeholder {
+  color: #aaa;
+  position: relative;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+input[type=text]:hover::placeholder, input[type=password]:hover::placeholder, input[type=text]:focus::placeholder, input[type=password]:focus::placeholder {
+  padding-top: 3em;
+}
+label{
+  color: #D77584;
+}
+.btn-link{
+  color: #63D5C3;
+  margin-left: 2%;
+}
+ h2 {
+  text-align: left;
+  font-weight: 100;
+  color: #63D5C3;
+  margin-bottom: 0.5em;
+}
+h1{
+  color: #63D5C3;
+}
+.form h4 {
+  font-weight: 100;
+  color: #fff;
+  margin-top: 2em;
+}
+.login, .signup {
+  color: rgba(255, 255, 255, 1);
+  width: 6em;
+  font-family: Lato;
+  font-weight: 100;
+  font-size: 1.75em;
+  border: 1px solid rgba(255, 255, 255, .75);
+  background: transparent;
+  transition: all 200ms ease-in;
+  border-radius: 0.65em;
+}
+.login:hover, .signup:hover, .login:focus, .signup:focus {
+  color: #D77584;
+  border: 1px solid rgba(255, 255, 255, .75);
+}
+.signup {
+  font-size: 1em;
+  position: relative;
+  left: 1.5em;
+}
+h1, h2 h3, h4, h5, h6, input {
+  font: Lato;
+  font-weight: 100;
+}
