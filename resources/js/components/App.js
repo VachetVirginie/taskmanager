@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 class App extends Component {
     constructor(props){
@@ -44,7 +44,9 @@ renderTasks(){
         <div key={task.id} className="media">
             <div className="media-body">
                 <div>
-                    {task.name} <button
+                    {task.name}
+                     <Link to={`/${task.id}/edit`}className="btn btn-sm btn-success float-right">Update</Link>
+                    <button
                             onClick={() => this.handleDelete(task.id)}
                             className="btn btn-sm btn-warning float-right"
                         >
@@ -86,7 +88,7 @@ handleDelete(id) {
                 <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
-                            <div className="card-header">Example Component</div>
+                            <div className="card-header">Examplesssss Componentdqsdsd</div>
 
                             <div className="card-body">
                                 <form onSubmit={this.handleSubmit}>

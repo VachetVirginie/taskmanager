@@ -22,6 +22,8 @@
         "react-dom": "^16.2.0"
     },
     "dependencies": {
-        "npm-watch": "^0.3.0"
+        "link": "^0.1.5",
+        "npm-watch": "^0.3.0",
+        "react-router-dom": "^4.3.1"
     }
 }
