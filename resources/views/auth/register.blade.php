@@ -7,7 +7,7 @@
                 <div class="title m-b-md">
     
                         <div class="col-md-6 col-md-offset-3 text-center title">
-                                <h1>Want to Register?</h1>
+                                <h1>Vous voulez vous inscrire?</h1>
                                 <div class="bar"></div>
                             </div>
                         </div>

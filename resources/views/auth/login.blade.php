@@ -7,7 +7,7 @@
             <div class="title m-b-md">
 
                     <div class="col-md-6 col-md-offset-3 text-center title">
-                            <h1>Want to Connect?</h1>
+                            <h1>Vous voulez vous connecter?</h1>
                             <div class="bar"></div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-default signup">
-                                    {{ __('Login') }}
+                                    {{ __('Connexion') }}
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
